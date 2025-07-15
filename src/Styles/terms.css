@@ -1,0 +1,151 @@
+```css
+/* terms.css */
+.terms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Back Button */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #7B38E9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background: #AA72FF;
+  transform: translateY(-2px);
+}
+
+.back-icon {
+  font-size: 20px;
+}
+
+/* Terms Content */
+.terms-content {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.terms-title {
+  color: #7B38E9;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.last-updated {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Section */
+.terms-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: #7B38E9;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f28c38;
+  padding-bottom: 5px;
+}
+
+.terms-section p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.terms-list {
+  list-style: none;
+  padding: 0;
+}
+
+.terms-list li {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.terms-list li::before {
+  content: '•';
+  color: #f28c38;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.terms-section a {
+  color: #7B38E9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terms-section a:hover {
+  color: #AA72FF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 15px;
+  }
+
+  .terms-title {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .terms-section p,
+  .terms-list li {
+    font-size: 14px;
+  }
+
+  .terms-content {
+    padding: 20px;
+  }
+
+  .back-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-title {
+    font-size: 24px;
+  }
+
+  .terms-content {
+    padding: 15px;
+  }
+}

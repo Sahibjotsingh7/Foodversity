@@ -1,0 +1,128 @@
+/* home.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  section {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(270deg, #7B38E9 0%, #AA72FF 100%); /* Light purple to indigo */
+    padding: 0;
+    padding-top:  20px;
+    border-radius: 50% / 0 0 40px 40px;
+    overflow: hidden;
+    border: none;
+  }
+  
+  .hero-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .hero-cta-section {
+    flex: 1 1 50%;
+    padding: 20px;
+  }
+  
+  .hero-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .hero-button-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .hero-button {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: black ;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 30px ;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #000000;
+    color: white;
+
+  }
+  
+  .hero-image-container {
+    flex: 1 1 60%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+   
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+
+  
+    .hero-inner-wrapper {
+      flex-direction: column;
+    }
+  
+    .hero-cta-section, .hero-image-container {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    
+
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+  
+    .hero-description {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  
+    .hero-button {
+      padding: 10px 20px;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .hero-button-container {
+        display: flex;
+        justify-content: center;
+      }
+  }
+  

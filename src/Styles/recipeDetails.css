@@ -1,0 +1,139 @@
+.rd-recipe-details-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #fefefe;
+  min-height: 100vh;
+}
+
+.rd-loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.rd-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #28a745;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rd-error-message {
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.rd-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rd-left-section,
+.rd-right-section {
+  flex: 1;
+}
+
+.rd-back-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #28a745;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.rd-back-icon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.rd-recipe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.rd-recipe-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.rd-section-title {
+  font-size: 22px;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.rd-ingredients-list,
+.rd-steps-list {
+  padding-left: 20px;
+  color: #eee312;
+}
+
+.rd-ingredient-item,
+.rd-step-item {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.rd-recipe-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.rd-recipe-author {
+  margin-top: 30px;
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .rd-content-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .rd-recipe-title {
+    font-size: 24px;
+  }
+
+  .rd-section-title {
+    font-size: 20px;
+  }
+
+  .rd-back-button {
+    font-size: 14px;
+  }
+
+  .rd-spinner {
+    width: 30px;
+    height: 30px;
+  }
+}
